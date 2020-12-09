@@ -6,14 +6,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    background-color: transparent;
+    transition: 0.5s;
   
     .logo-container {
       height: 100%;
       width: 70px;
-      padding: 25px;
+      padding: 10px 0 10px 20px;
     }
-  
     .options {
+      padding-left: 20px;
       width: 50%;
       height: 100%;
       display: flex;
@@ -23,5 +25,14 @@
       .option {
         padding: 10px 15px;
       }
+    }
+  }
+  .active {
+    background-color:#5b4e4b;
+    box-shadow: 1px 1px 10px;
+    transition: 0.5s;
+
+    .option{
+      color: white;
     }
   }
