@@ -40,7 +40,6 @@ class SignupComponent extends React.Component{
         this.setState({[name]:value})
     }
     render(){
-        const {displayName,email,password,confirmPassword}=this.state;
         return(
             <div className='sign-up'>
                 <h2 className='title'>Want to create account ?</h2>
@@ -48,7 +47,7 @@ class SignupComponent extends React.Component{
                     <form className='sign-up-form' onSubmit={this.handleSubmit}>
                         <FormInput 
                             type='name'
-                            name='name' 
+                            name='displayName' 
                             value={this.state.displayName} 
                             handleChange={this.handleChange}
                             label='name'
