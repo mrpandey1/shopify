@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './header.styles.scss';
+
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from'./crown.svg';
 import { auth } from '../../firebase/firebase.util';
 import $ from 'jquery';
+import {connect} from 'react-redux';
+
 class Header extends React.Component{
-    constructor(props){
-        super(props);
-    }
     componentDidMount=()=>{
         $(function() {
             $(window).on("scroll", function() {
@@ -20,7 +20,7 @@ class Header extends React.Component{
         });
     }
     render(){
-        const currentUser=this.props.currentUser;
+        const {currentUser} = this.props;
         return(
             <div className='header'>
                 <Link to='/' className='logo-container'>
@@ -47,4 +47,8 @@ class Header extends React.Component{
     }
 }
 
-export default Header;
+const mapStateToProps=state=>({
+    currentUser:state.user.currentUser
+})
+
+export default connect(mapStateToProps)(Header);
