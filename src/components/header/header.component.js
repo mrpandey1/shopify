@@ -6,6 +6,7 @@ import { ReactComponent as Logo } from'./crown.svg';
 import { auth } from '../../firebase/firebase.util';
 import $ from 'jquery';
 import {connect} from 'react-redux';
+import CartIcon from '../cart-icon/cart-icon.component';
 
 class Header extends React.Component{
     componentDidMount=()=>{
@@ -41,6 +42,7 @@ class Header extends React.Component{
                             {currentUser?'SIGNOUT':'SIGNIN'}
                         </Link>
                     }
+                    <CartIcon/>
                 </div>
         </div>
         );
