@@ -3,7 +3,7 @@ import './checkout.styles.scss';
 import {selectCartItems, selectCartTotal} from '../../redux/cart/cart.selectors';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
-
+import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 
 const CheckoutPage=({cartItems,total})=>(
     <div className='checkout-page topmargin'>
@@ -26,7 +26,7 @@ const CheckoutPage=({cartItems,total})=>(
         </div>
         {
             cartItems.map(cartItem=>
-                cartItem.name)
+                <CheckoutItem key={cartItem.id} cartItem={cartItem}/>)
         }
         <div className='total'>
             <span>Total : ${total}</span>
