@@ -2,6 +2,7 @@ import React from 'react';
 import './header.styles.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from'./crown.svg';
+import { ReactComponent as LightLogo } from'./crown-light.svg';
 import { auth } from '../../firebase/firebase.util';
 import $ from 'jquery';
 import {connect} from 'react-redux';
@@ -12,23 +13,48 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { createStructuredSelector } from 'reselect';
 
 class Header extends React.Component{
-    componentDidMount=()=>{
+    constructor(props) {
+        super(props);
+        this.state = {
+            blackImage:true
+        }
+      }
+    stateHandler = (state) => {
+    this.setState(state);
+    }
+    listenScrollEvent = (e,stateHandler) => {
         $(function() {
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 50) {
                     $(".header").addClass("active");
+                    stateHandler({
+                        blackImage:false
+                    })
                 } else {
                    $(".header").removeClass("active");
+                   stateHandler({
+                       blackImage:true
+                   })
                 }
             });
         });
+      }
+    componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent(this,this.stateHandler))
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.listenScrollEvent(this,this.stateHandler));
     }
     render(){
         const {currentUser,hidden} = this.props;
         return(
             <div className='header'>
                 <Link to='/' className='logo-container'>
-                    <Logo className='logo'/>
+                    { this.state.blackImage ?
+                        <Logo className='logo'/>
+                        :<LightLogo className='logo'/>
+                    }
                 </Link>
                 <div className='options'>
                     <Link className='option' to='/shop'>
@@ -45,7 +71,7 @@ class Header extends React.Component{
                             {currentUser?'SIGNOUT':'SIGNIN'}
                         </Link>
                     }
-                    <CartIcon/>
+                    <CartIcon image={this.state.blackImage}/>
                 </div>
                 {hidden ? null :<CartDropdown/>}
         </div>
@@ -53,9 +79,10 @@ class Header extends React.Component{
     }
 }
 
+
 const mapStateToProps=createStructuredSelector({
     currentUser:selectCurrentUser,
-    hidden:selectCartHidden
+    hidden:selectCartHidden,
 })
 
 export default connect(mapStateToProps)(Header);
