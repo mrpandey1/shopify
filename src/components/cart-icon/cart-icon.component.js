@@ -14,7 +14,7 @@ const CartIcon = ({toggleCartHidden,itemCount,image}) => (
             <ShoppingIcon className='shopping-icon'/>:
             <ShoppingIconWhite className='shopping-icon'/>
         }
-        <span className='item-count'>{itemCount}</span>
+        <span className={`item-count ${image ? 'black':'white'}`}>{itemCount}</span>
     </div>
 )
 const mapDispatchToProps = dispatch => ({

@@ -17,5 +17,13 @@
       font-size: 10px;
       font-weight: bold;
       bottom: 12px;
+
+      &.black{
+        color: black;
+      }
+
+      &.white{
+        color: white;
+      }
     }
   }
