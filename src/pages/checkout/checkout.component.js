@@ -29,9 +29,9 @@ const CheckoutPage=({cartItems,total})=>(
                 <CheckoutItem key={cartItem.id} cartItem={cartItem}/>)
         }
         <div className='total'>
-            <span>Total : ₹{total*75}</span>
+            <span>Total : ₹{total}</span>
         </div>
-        <StripeCheckoutButton price={total*75}/>
+        <StripeCheckoutButton price={total}/>
     </div>
 )
 
