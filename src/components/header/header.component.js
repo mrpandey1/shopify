@@ -3,7 +3,6 @@ import './header.styles.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from'./crown.svg';
 import { ReactComponent as LightLogo } from'./crown-light.svg';
-import { auth } from '../../firebase/firebase.util';
 import $ from 'jquery';
 import {connect} from 'react-redux';
 import CartIcon from '../cart-icon/cart-icon.component';
@@ -11,6 +10,7 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { createStructuredSelector } from 'reselect';
+import { signOutStart } from '../../redux/user/user.actions';
 
 class Header extends React.Component{
     constructor(props) {
@@ -47,7 +47,7 @@ class Header extends React.Component{
         window.removeEventListener("scroll", this.listenScrollEvent(this,this.stateHandler));
     }
     render(){
-        const {currentUser,hidden} = this.props;
+        const {currentUser,hidden,signOutStart} = this.props;
         return(
             <div className='header'>
                 <Link to='/' className='logo-container'>
@@ -65,7 +65,7 @@ class Header extends React.Component{
                     </Link>
                     {
                         currentUser?
-                        <div className='option' onClick={()=>auth.signOut()}>SIGNOUT</div>
+                        <div className='option' onClick={signOutStart}>SIGNOUT</div>
                         :
                         <Link className='option' to='/signin'>
                             {currentUser?'SIGNOUT':'SIGNIN'}
@@ -85,4 +85,11 @@ const mapStateToProps=createStructuredSelector({
     hidden:selectCartHidden,
 })
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps=dispatch=>({
+    signOutStart:()=>dispatch(signOutStart())
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+    )(Header);
