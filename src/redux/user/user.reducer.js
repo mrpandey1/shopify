@@ -1,3 +1,4 @@
+import UserActionTypes from './user.types';
 import ShopActionTypes from './user.types';
 const INITIAL_STATE={
     currentUser:null,
@@ -19,6 +20,7 @@ const userReducer=(state=INITIAL_STATE,action)=>{
                 }
             case ShopActionTypes.SIGN_IN_FAILURE:
             case ShopActionTypes.SIGN_OUT_FAILURE:
+            case UserActionTypes.SIGN_UP_FAILURE:
             return{
                 ...state,
                 error:action.payload
