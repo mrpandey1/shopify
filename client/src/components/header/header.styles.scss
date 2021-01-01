@@ -13,6 +13,10 @@
       height: 100%;
       width: 70px;
       padding: 10px 0 10px 20px;
+
+      @media screen and (max-width:850px){
+        width: 50px;
+      }
     }
     .options {
       padding-left: 20px;
@@ -23,9 +27,18 @@
       align-items: center;
       justify-content: flex-end;
   
+      @media screen and (max-width:850px){
+        width: 80%;
+      }
       .option {
         padding: 10px 15px;
       }
+    }
+
+    @media screen and (max-width:850px){
+      height: 60px;
+      padding: 10px;
+      margin-bottom: 26px;
     }
   }
   .active {

@@ -4,4 +4,10 @@
     background-position: center;
     background-size: cover;
     background-image: url('https://preview.colorlib.com/theme/product/images/hero_bg_5.jpg');
-}
+
+    @media screen and (max-width:850px) {
+        display:block;
+        background-image: unset;
+        height: 70px;
+    }
+} 

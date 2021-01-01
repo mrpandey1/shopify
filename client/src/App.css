@@ -17,3 +17,13 @@ a{
     padding-left: 50px;
     padding-right: 50px;
 }
+
+@media screen and (max-width:850px){
+    .body{
+        padding: 10px;
+    }
+    .bodyPadding{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
