@@ -25,3 +25,6 @@
 
   <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="45%" />
   <br>
+<p align="center"> 
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg">
+</p>
