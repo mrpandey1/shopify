@@ -13,13 +13,14 @@
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/authentication.png">
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc1.png">
 </p>
+<br>
 
 ## Category and Checkout
 <p align="center"> 
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc2.png">
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc3.png">
 </p>
-
+<br>
 ## Mobile-view
 
 <p align="center"> 
