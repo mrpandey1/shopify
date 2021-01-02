@@ -22,6 +22,6 @@
 
 ### Mobile-view
 <p float="left">
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="100" />
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="100" /> 
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="100%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="100%" /> 
 </p>
