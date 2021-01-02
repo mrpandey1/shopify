@@ -21,18 +21,8 @@
   <br>
 
 ### Mobile-view
-<p float="left">
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="100%" />
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="100%" /> 
-</p>
 
-<table>
-  <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width=270 height=480></td>
-    <td><img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width=270 height=480></td>
-  </tr>
- </table>
+<p align="center"> 
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg">
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg">
+</p>
