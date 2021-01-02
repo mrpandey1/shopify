@@ -5,7 +5,10 @@ import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
-const CheckoutPage=({cartItems,total})=>(
+import CartEmpty from '../../components/cart-empty/cart-empty.component';
+const CheckoutPage=({cartItems,total})=>{
+    return(
+    cartItems.length>=1? 
     <div className='checkout-page topmargin'>
         <div className='checkout-header'>
             <div className='header-block'>
@@ -29,11 +32,19 @@ const CheckoutPage=({cartItems,total})=>(
                 <CheckoutItem key={cartItem.id} cartItem={cartItem}/>)
         }
         <div className='total'>
-            <span>Total : ₹{total}</span>
+            {
+            cartItems.length>=1? <span>Total : ₹{total}</span>:
+            null
+            }
         </div>
-        <StripeCheckoutButton price={total}/>
-    </div>
-)
+        {
+        cartItems.length>=1? <StripeCheckoutButton price={total}/>:
+        null
+        }
+    </div>:
+    <CartEmpty/>
+    );
+    }
 
 const mapStateToProps=createStructuredSelector({
     cartItems:selectCartItems,
