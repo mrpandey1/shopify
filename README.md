@@ -8,19 +8,19 @@
 
 ## Screenshots
 
-### Login and Home screen
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/authentication.png" width="40%" />
+## Login and Home screen
+<p align="center"> 
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/authentication.png">
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc1.png">
+</p>
 
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc1.png" width="40%" />
-  <br>
+## Category and Checkout
+<p align="center"> 
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc2.png">
+<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc3.png">
+</p>
 
-### Category and Checkout
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc2.png" width="40%" />
-
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc3.png" width="40%" />
-  <br>
-
-### Mobile-view
+## Mobile-view
 
 <p align="center"> 
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg">
