@@ -11,7 +11,7 @@ const CheckoutPage=({cartItems,total})=>(
             <div className='header-block'>
                 <span>Product</span>
             </div>
-            <div className='header-block'>
+            <div className='header-block description'>
                 <span>Description</span>
             </div>
             <div className='header-block'>
