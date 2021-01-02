@@ -3,8 +3,10 @@
     flex-direction: column;
     width: 380px;
     margin-top: 40px;
+    @media screen and(max-width:850px){
+        width: 80vw;
+    }
     .title{
         margin: 10px 0;
-
-    }
+    } 
 }
