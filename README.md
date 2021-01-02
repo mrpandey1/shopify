@@ -21,10 +21,7 @@
   <br>
 
 ### Mobile-view
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="90%" />
-
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="90%" />
-  <br>
-<p align="center"> 
-<img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg">
+<p float="left">
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="100" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="100" /> 
 </p>
