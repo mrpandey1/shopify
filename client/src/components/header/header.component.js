@@ -60,9 +60,6 @@ class Header extends React.Component{
                     <Link className='option' to='/shop'>
                         SHOP
                     </Link>
-                    <Link className='option' to='/shop'>
-                        CONTACT
-                    </Link>
                     {
                         currentUser?
                         <div className='option' onClick={signOutStart}>SIGNOUT</div>

@@ -9,14 +9,11 @@
     background-color: transparent;
     transition: 0.5s;
     z-index: 100;
+
     .logo-container {
       height: 100%;
       width: 70px;
       padding: 10px 0 10px 20px;
-
-      @media screen and (max-width:850px){
-        width: 50px;
-      }
     }
     .options {
       padding-left: 20px;
@@ -35,11 +32,11 @@
       }
     }
 
-    @media screen and (max-width:850px){
-      height: 60px;
-      padding: 10px;
-      margin-bottom: 26px;
-    }
+    // @media screen and (max-width:850px){
+    //   height: 60px;
+    //   padding: 10px;
+    //   margin-bottom: 26px;
+    // }
   }
   .active {
     background-color:rgba(49, 28, 24, 0.9);
