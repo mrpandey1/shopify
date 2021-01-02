@@ -16,7 +16,7 @@ $main-color: black;
     background-color: white;
     color: $sub-color;
     font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    padding: 10px 0px;
     display: block;
     width: 100%;
     border: none;
@@ -30,6 +30,9 @@ $main-color: black;
 
     &:focus ~ .form-input-label {
       @include shrinkLabel();
+    }
+    @media screen and (max-width:850px){
+      width:100%;
     }
   }
 
