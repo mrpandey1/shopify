@@ -21,8 +21,8 @@
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc3.png">
 </p>
 <br>
-## Mobile-view
 
+## Mobile-view
 <p align="center"> 
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg">
 <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg">
