@@ -9,19 +9,19 @@
 ## Screenshots
 
 ### Login and Home screen
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/authentication.png" width="45%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/authentication.png" width="40%" />
 
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc1.png" width="45%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc1.png" width="40%" />
   <br>
 
 ### Category and Checkout
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc2.png" width="45%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc2.png" width="40%" />
 
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc3.png" width="45%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/pc3.png" width="40%" />
   <br>
 
 ### Mobile-view
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="45%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile1.jpeg" width="90%" />
 
-  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="45%" />
+  <img src="https://github.com/mrpandey1/shopify/blob/main/screenshots/mobile2.jpeg" width="90%" />
   <br>
